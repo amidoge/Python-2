@@ -1,0 +1,10 @@
+from math import log10
+a = int(input('What is your first number to operate with? '))
+b = int(input('What is your second number to operate with? '))
+print(f'The sum of {a} and {b} is {a + b}.')
+print(f'The diffence when {b} is subtracted by {a} is {b - a}.')
+print(f'The product of {a} and {b} is {a * b}.')
+print(f'The quotient when {a} is divided by {b} is {a / b}.')
+print(f'The remainder when {a} is divided by {b} is {a % b}.')
+print(f'The result of log10 multiplied by {a} is {log10(a)}.')
+print(f'The result of {b} to the power of {a} is {a ** b}.')
