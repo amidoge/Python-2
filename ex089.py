@@ -20,7 +20,7 @@ for i,char in enumerate(string):
         string_list.append(char.upper())
     #if there is nothing else, then i want to just add the letter
     else:
-        string_list.append(char)
+        string_list.append(char) 
     
     
 #printing the list
