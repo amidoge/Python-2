@@ -13,13 +13,10 @@ def prime_or_not(number):
         if number == 2:
             return True
         else:
-            for i in range(number):
-                if i == 0 or i == 1: #Since there would be a ZeroDivisionError and any number can divide with 1
-                    continue
-                elif number % i == 0: #if it can (integer) divide without any remainders
+            for i in range(2, number // 2):
+                if number % i == 0: #if it can (integer) divide without any remainders
                     return False
-                else:
-                    return True #if there were no clean divisions then that means that it has to be prime because nothing was able to divide with it
+            return True
     return False
 
 if __name__ == '__main__':
