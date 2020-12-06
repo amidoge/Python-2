@@ -24,7 +24,8 @@ def random_password():
         random_char = randint(33, 126)
         char = chr(random_char) #this function makes the ASCII int turn into a char
         random_chars.append(char)
-    print(''.join(random_chars))
+    return ''.join(random_chars)
     
 if __name__ == '__main__':
     a = random_password()
+    print(a)
